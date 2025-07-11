@@ -9,7 +9,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-with open("../model.pkl", "rb") as model_file:
+with open("model.pkl", "rb") as model_file:
     model = pickle.load(model_file) 
 
 @app.get("/")
